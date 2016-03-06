@@ -40,7 +40,7 @@ module.exports = function(passport) {
 	
         passReqToCallback : true // allows us to pass back the entire request to the callback
     },
-    function(req, email, password, done) {
+    function(req,firstname, email, password, done) { //TODO: added Firstname param.
 
         // asynchronous
         // User.findOne wont fire unless data is sent back
